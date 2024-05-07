@@ -1,0 +1,16 @@
+﻿<Window x:Class="QuotaGenerator_App.QuoteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuotaGenerator_App"
+        mc:Ignorable="d"
+        Title="QuoteWindow" FontSize="20" FontFamily="Consales"
+        Height="250" MinHeight="250" MaxHeight="250" 
+        Width="260" MinWidth="260" MaxWidth="260">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="FileButton" Content="positive quote" Width="200" Height="40" Margin="10" Foreground="DarkBlue" Click="FileButton_Click"/>
+        <Button x:Name="DatabaseButton" Content="funny quote" Width="200" Height="40" Margin="10" Foreground="DarkBlue" Click="DatabaseButton_Click"/>
+        <Button x:Name="ExitButton" Content="exit" Width="200" Height="40" Margin="10" Foreground="Red" Click="ExitButton_Click"/>
+    </StackPanel>
+</Window>

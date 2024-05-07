@@ -1,0 +1,25 @@
+﻿<Window x:Class="QuotaGenerator_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuotaGenerator_App"
+        mc:Ignorable="d"
+        Title="MainWindow" FontSize="20" FontFamily="Consales"
+        Height="200" MinHeight="200" MaxHeight="200" 
+        Width="250" MinWidth="250" MaxWidth="250">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Server ip:" Margin="10"/>
+            <TextBox x:Name="IpTextBox" Text="127.0.0.1" Height="30" Margin="10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Server port:" Margin="10"/>
+            <TextBox x:Name="PortTextBox" Text="1024" Height="30" Margin="10"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="ConnectButton" Content="connect" Margin="10" Height="30" Width="100" Click="ConnectButton_Click"/>
+            <Button x:Name="ExitButton" Content="exit" Margin="10" Height="30" Width="100" Click="ExitButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
